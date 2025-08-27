@@ -21,7 +21,7 @@ A simple LinkedIn-style community platform with user authentication, public post
 
 - **Frontend:** React (Vite)
 - **Backend:** Node.js, Express
-- **Database:** MongoDB (Mongoose)
+- **Database:** MongoDB (Atlas)
 - **Deployment:** Vercel (frontend), Vercal (backend)
 
 ---
