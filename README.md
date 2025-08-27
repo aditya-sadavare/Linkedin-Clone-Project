@@ -6,15 +6,14 @@ A simple LinkedIn-style community platform with user authentication, public post
 
 ## 🚀 Live Demo
 
-[Live Demo URL](https://your-frontend-deployment-url)  
-(Replace with your actual deployed frontend URL)
+[Live Demo URL](https://linkedin-clone-aditya.vercel.app)  
+
 
 ---
 
 ## 📦 GitHub Repository
 
-[GitHub Repo Link](https://github.com/yourusername/your-repo)  
-(Replace with your actual GitHub repo link)
+[GitHub Repo Link](https://github.com/aditya-sadavare/Linkedin-Clone-Project)  
 
 ---
 
@@ -23,7 +22,7 @@ A simple LinkedIn-style community platform with user authentication, public post
 - **Frontend:** React (Vite)
 - **Backend:** Node.js, Express
 - **Database:** MongoDB (Mongoose)
-- **Deployment:** Vercel (frontend), Render (backend) *(or your chosen platforms)*
+- **Deployment:** Vercel (frontend), Vercal (backend)
 
 ---
 
@@ -32,6 +31,7 @@ A simple LinkedIn-style community platform with user authentication, public post
 - **User Authentication**
   - Register/Login (Email & Password)
   - Profile with name, email, bio
+  - JWT, Bcrypt
 - **Public Post Feed**
   - Create, read, and display text-only posts
   - Home feed with author’s name and timestamp
@@ -99,8 +99,8 @@ You can register a new user, or use these demo credentials (if seeded):
 
 ## 🌐 Deployment
 
-- **Frontend:** Deploy `/frontend` on [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/)
-- **Backend:** Deploy `/backend` on [Render](https://render.com/) or [Railway](https://railway.app/)
+- **Frontend:** Deploy `/frontend` on [Vercel](https://linkedin-clone-aditya.vercel.app/) 
+- **Backend:** Deploy `/backend` on [Vercel]([https://render.com/](https://linkedin-backend-aditya.vercel.app))
 - Update your `.env` files with the deployed URLs.
 
 ---
