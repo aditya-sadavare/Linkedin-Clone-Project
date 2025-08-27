@@ -21,7 +21,7 @@ const Profile = () => {
   const fetchProfile = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/profile/${userId}`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/profile/${userId}`,
         { withCredentials: true }
       );
       setProfile(data);
