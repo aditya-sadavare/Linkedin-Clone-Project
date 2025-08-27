@@ -92,8 +92,8 @@ npm install
 
 You can register a new user, or use these demo credentials (if seeded):
 
-- **Email:** demo@example.com
-- **Password:** demo123
+- **Email:** demo@gmail.com
+- **Password:** demo
 
 ---
 
