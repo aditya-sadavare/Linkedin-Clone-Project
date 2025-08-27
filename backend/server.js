@@ -13,7 +13,7 @@ const app = express();
 // ✅ Use your FRONTEND_URL from env
 app.use(
   cors({
-    origin: "*",
+    origin: "https://linkedin-clone-aditya.vercel.app",
     credentials: true,
   })
 );
