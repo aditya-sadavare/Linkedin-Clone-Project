@@ -10,37 +10,47 @@ const profileRoutes = require("./routes/profile");
 
 const app = express();
 
+// ✅ Use your FRONTEND_URL from env
 app.use(
   cors({
     origin: "*",
     credentials: true,
   })
 );
+
 app.use(cookieParser());
 app.use(express.json());
 
+// Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/profile", profileRoutes);
 
+// Error handler
 app.use((err, req, res, next) => {
   const status = err.status || 500;
   res.status(status).json({ msg: err.message });
 });
 
-const startServer = async () => {
+// ✅ MongoDB Connection (Lazy & Reusable)
+let isConnected = false;
+
+const connectDB = async () => {
+  if (isConnected) return;
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
+    const db = await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
+    isConnected = db.connections[0].readyState === 1;
     console.log("MongoDB connected");
-    app.listen(process.env.PORT, () =>
-      console.log("Server running on port " + process.env.PORT)
-    );
   } catch (err) {
     console.error("MongoDB connection error", err);
   }
 };
 
-startServer();
+
+module.exports = async (req, res) => {
+  await connectDB();
+  return app(req, res);
+};
