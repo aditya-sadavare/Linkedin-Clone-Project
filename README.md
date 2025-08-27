@@ -31,7 +31,7 @@ A simple LinkedIn-style community platform with user authentication, public post
 - **User Authentication**
   - Register/Login (Email & Password)
   - Profile with name, email, bio
-  - JWT, Bcrypt
+  - JWT, Bcrypt, Cookies
 - **Public Post Feed**
   - Create, read, and display text-only posts
   - Home feed with author’s name and timestamp
