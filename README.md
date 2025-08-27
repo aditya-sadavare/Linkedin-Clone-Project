@@ -99,8 +99,8 @@ You can register a new user, or use these demo credentials (if seeded):
 
 ## 🌐 Deployment
 
-- **Frontend:** Deploy `/frontend` on [Vercel](https://linkedin-clone-aditya.vercel.app/) 
-- **Backend:** Deploy `/backend` on [Vercel]([https://render.com/](https://linkedin-backend-aditya.vercel.app))
+- **Frontend:** Deploy `/frontend` on [Vercel](https://linkedin-clone-aditya.vercel.app) 
+- **Backend:** Deploy `/backend` on [Vercel](https://linkedin-backend-aditya.vercel.app)
 - Update your `.env` files with the deployed URLs.
 
 ---
